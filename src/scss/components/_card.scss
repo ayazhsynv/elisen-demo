@@ -1,0 +1,24 @@
+.heading {
+  color: $white-color;
+  padding: 7px 11px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  &__blue {
+    background-color: $blue-color;
+  }
+  &__green {
+    background-color: $light-green-color;
+  }
+  &__pink {
+    background-color: $pink-color;
+  }
+  &__yellow {
+    background-color: $yellow-color;
+  }
+  &__red {
+    background-color: $red-color;
+  }
+  &__orange {
+    background-color: $orange-color;
+  }
+}

@@ -63,10 +63,23 @@ nav {
       background-color: $black-color;
       padding: 20px;
       border-radius: 10px;
-      top: 35px;
+      top: 30px;
       left: -50px;
       width: 200px;
       display: none;
+      &:hover {
+        display: flex;
+        z-index: 10;
+      }
+      ul {
+        li {
+          &:nth-child(5) {
+            background-color: $black-color;
+            border-radius: 0;
+            padding: 5px 10px;
+          }
+        }
+      }
     }
   }
 }
