@@ -8,6 +8,7 @@
 
 @import "components/card";
 @import "components/user";
+@import "components/title";
 
 @import "layout/header";
 @import "layout/navbar";
@@ -15,5 +16,8 @@
 
 @import "pages/home/hero";
 @import "pages/home/discovery";
+@import "pages/home/trending";
+@import "pages/home/editor";
+@import "pages/home/buzz";
 
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");

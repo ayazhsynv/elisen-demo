@@ -72,3 +72,10 @@
 .col-xl-12 {
   padding: 0;
 }
+
+.row {
+  margin: 0 165px;
+  @media (max-width: 992px) {
+    margin: 0px;
+  }
+}

@@ -1,0 +1,17 @@
+.buzz {
+  &__card {
+    padding: 15px;
+    height: 315px;
+
+    margin-top: 10px;
+    &__inner {
+      border-radius: 10px;
+      padding: 30px;
+      height: 100%;
+      h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

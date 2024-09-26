@@ -221,6 +221,15 @@ body {
   padding: 0;
 }
 
+.row {
+  margin: 0 165px;
+}
+@media (max-width: 992px) {
+  .row {
+    margin: 0px;
+  }
+}
+
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-style: normal;
@@ -319,6 +328,33 @@ h1 {
   margin-right: 20px;
 }
 
+.title h5 {
+  margin-left: 30px;
+}
+.title a {
+  text-decoration: none;
+}
+.title a h3 {
+  text-transform: uppercase;
+  color: #e9608e;
+  font-size: 12px;
+  word-spacing: 3px;
+}
+.title a h3 i {
+  border-radius: 50px;
+  border: 1px solid #e9608e;
+  padding: 7px;
+  margin-left: 7px;
+  transition: all 0.15s ease-in-out;
+}
+.title a h3:hover i {
+  background-color: #e9608e;
+  color: #ffffff;
+}
+.title hr {
+  color: #bcbcbc;
+}
+
 nav {
   background-color: #1e1e1e;
   padding: 0 60px;
@@ -402,24 +438,26 @@ nav .menu .sub-menu ul li:nth-child(5) {
 }
 @media screen and (max-width: 992px) {
   .hero {
-    height: 640px;
+    height: 500px;
   }
 }
 @media screen and (max-width: 768px) {
   .hero {
-    height: 800px;
+    height: 700px;
   }
 }
 .hero .container_fluid {
   background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
 }
-.hero .row {
-  margin: 0 165px;
-}
 .hero__content {
   padding: 0 15px;
   margin-bottom: 100px;
+}
+@media screen and (max-width: 992px) {
+  .hero__content {
+    margin-bottom: 50px;
+  }
 }
 .hero__content__heading {
   color: #ffffff;
@@ -432,6 +470,11 @@ nav .menu .sub-menu ul li:nth-child(5) {
   align-items: flex-start;
   justify-content: center;
   padding: 15px;
+}
+@media screen and (max-width: 992px) {
+  .hero__card {
+    justify-content: start;
+  }
 }
 .hero__card__img img {
   width: 90px;
@@ -463,36 +506,126 @@ nav .menu .sub-menu ul li:nth-child(5) {
 .discovery {
   padding-top: 50px;
 }
-.discovery .row {
-  margin: 0 165px;
-}
-.discovery__title h5 {
-  margin-left: 30px;
-}
-.discovery__title h3 {
-  text-transform: uppercase;
-  color: #e9608e;
-  font-size: 12px;
-  word-spacing: 3px;
-}
-.discovery__title h3 i {
-  border-radius: 50px;
-  border: 1px solid #e9608e;
-  padding: 7px;
-  margin-left: 7px;
-}
-.discovery__title hr {
-  color: #bcbcbc;
-}
 .discovery__content {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .discovery__content__card {
   height: 330px;
   padding: 15px;
 }
+@media (max-width: 768px) {
+  .discovery__content__card {
+    height: 100%;
+  }
+}
 .discovery__content__card__inner {
   height: 100%;
   padding: 30px;
   border-radius: 10px;
+}
+
+.trending {
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+.trending__content {
+  margin-top: 20px;
+  height: 425px;
+  border-radius: 10px;
+}
+.trending__content__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 30px;
+  width: 357.5px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+}
+.trending__content__card h2 {
+  margin-bottom: 10px;
+}
+.trending__content__card h5 {
+  line-height: 1.5;
+}
+
+.editor__content {
+  margin-top: 20px;
+}
+.editor__content__main {
+  height: 610px;
+  border-radius: 10px;
+  padding-right: 15px;
+}
+@media screen and (max-width: 1200px) {
+  .editor__content__main {
+    height: 360px;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .editor__content__main {
+    height: 100%;
+  }
+}
+.editor__content__main__inner {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  padding: 40px;
+}
+.editor__content__card {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  padding-left: 15px;
+}
+.editor__content__card__img img {
+  width: 130px;
+  height: 130px;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+@media screen and (max-width: 1200px) {
+  .editor__content__card__img img {
+    width: 90px;
+    height: 90px;
+  }
+}
+.editor__content__card__img__bookmark {
+  top: 15px;
+  left: 10px;
+}
+.editor__content__card__img__bookmark i {
+  color: #121212;
+  font-size: 14px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  padding: 8px;
+}
+.editor__content__card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.editor__content__card__content h3 {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.buzz__card {
+  padding: 15px;
+  height: 315px;
+  margin-top: 10px;
+}
+.buzz__card__inner {
+  border-radius: 10px;
+  padding: 30px;
+  height: 100%;
+}
+.buzz__card__inner h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
 }/*# sourceMappingURL=style.css.map */

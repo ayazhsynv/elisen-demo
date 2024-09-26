@@ -1,33 +1,13 @@
 .discovery {
   padding-top: 50px;
-  .row {
-    margin: 0 165px;
-  }
-  &__title {
-    h5 {
-      margin-left: 30px;
-    }
-    h3 {
-      text-transform: uppercase;
-      color: $pink-color;
-      font-size: 12px;
-      word-spacing: 3px;
-      i {
-        border-radius: 50px;
-        border: 1px solid $pink-color;
-        padding: 7px;
-        margin-left: 7px;
-      }
-    }
-    hr {
-      color: $gray-color;
-    }
-  }
   &__content {
-    padding-top: 20px;
+    padding-top: 10px;
     &__card {
       height: 330px;
       padding: 15px;
+      @media (max-width: 768px) {
+        height: 100%;
+      }
       &__inner {
         height: 100%;
         padding: 30px;

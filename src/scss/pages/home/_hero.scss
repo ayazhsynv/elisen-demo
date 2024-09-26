@@ -5,22 +5,22 @@
   background-position: center;
   background-repeat: no-repeat;
   @media screen and (max-width: 992px) {
-    height: 640px;
+    height: 500px;
   }
   @media screen and (max-width: 768px) {
-    height: 800px;
+    height: 700px;
   }
   .container_fluid {
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
   }
-  .row {
-    margin: 0 165px;
-  }
 
   &__content {
     padding: 0 15px;
     margin-bottom: 100px;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 50px;
+    }
     &__heading {
       color: $white-color;
       background-color: $blue-color;
@@ -34,6 +34,9 @@
     align-items: flex-start;
     justify-content: center;
     padding: 15px;
+    @media screen and (max-width: 992px) {
+      justify-content: start;
+    }
 
     &__img {
       img {
@@ -58,7 +61,6 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-
       height: 90px;
       h3 {
         margin: 5px 0;

@@ -1,0 +1,62 @@
+.editor {
+  &__content {
+    margin-top: 20px;
+    &__main {
+      height: 610px;
+      border-radius: 10px;
+      padding-right: 15px;
+      @media screen and (max-width: 1200px) {
+        height: 360px;
+        padding: 10px;
+      }
+      @media screen and (max-width: 768px) {
+        height: 100%;
+      }
+      &__inner {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        padding: 40px;
+      }
+    }
+    &__card {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 30px;
+      padding-left: 15px;
+
+      &__img {
+        img {
+          width: 130px;
+          height: 130px;
+          border-radius: 10px;
+          margin-right: 15px;
+          @media screen and (max-width: 1200px) {
+            width: 90px;
+            height: 90px;
+          }
+        }
+        &__bookmark {
+          top: 15px;
+          left: 10px;
+          i {
+            color: $black-color;
+            font-size: 14px;
+            border-radius: 100px;
+            background-color: $white-color;
+            padding: 8px;
+          }
+        }
+      }
+      &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h3 {
+          margin: 5px 0;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
