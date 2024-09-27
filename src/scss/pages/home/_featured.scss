@@ -1,0 +1,10 @@
+.featured {
+  background-color: $dark-color;
+  &__card {
+    margin-top: 20px;
+    padding: 70px;
+    h5 {
+      margin-top: 10px;
+    }
+  }
+}
