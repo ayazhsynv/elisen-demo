@@ -828,4 +828,73 @@ footer .footer__copyright ul li a {
   margin: 10px 0;
   font-size: 14px;
   color: #ffffff;
+}
+
+.contact {
+  padding: 50px 0;
+}
+.contact__card {
+  padding: 15px 30px;
+}
+.contact__card__inner {
+  padding: 40px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+}
+.contact__card__inner h2 {
+  margin-bottom: 20px;
+}
+.contact__card__inner p {
+  color: #bcbcbc;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.contact__card__inner h5 {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.contact__card__inner h5 i {
+  font-size: 20px;
+  color: #015652;
+  padding-right: 10px;
+}
+.contact__card__inner ul li {
+  padding: 3px;
+  width: 41px;
+  height: 41px;
+}
+.contact__card__inner ul li a {
+  text-decoration: none;
+}
+.contact__card__inner ul li a i {
+  border-radius: 50px;
+  padding: 6px;
+}
+.contact__form {
+  padding: 15px 30px;
+}
+.contact__form h5 {
+  margin-bottom: 10px;
+}
+.contact__form input {
+  color: #ffffff;
+  height: 50px;
+  margin-bottom: 10px;
+  padding: 5px 15px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.contact__form #message {
+  height: 150px;
+}
+.contact__form button {
+  margin-top: 10px;
+  padding: 5px 30px;
+  height: 40px;
+  background-color: #e9608e;
+  color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e9608e;
 }/*# sourceMappingURL=style.css.map */
